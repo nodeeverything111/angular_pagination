@@ -1,0 +1,12 @@
+angular.module('extendtool',[]).controller('extendCon',['$scope',function(scope){
+	scope.option={
+		count:200,
+		showpage:10,
+		currpage:20,
+		firstpage:8,
+		click:function(num){
+			debugger;
+			$('#i1')[0].src='pic/'+(num-this.firstpage+1)+'.jpg';
+		}
+	}
+}]);
